@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_element_text_fields",
+  "info": {
+    "name": "TextField",
+    "icon": "text-height"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    }
+  }
+}

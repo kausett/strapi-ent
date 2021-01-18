@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footers",
+  "info": {
+    "name": "Footer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "organization": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.organization-info"
+    },
+    "sections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.dropdown"
+    },
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

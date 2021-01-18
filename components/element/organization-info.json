@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_element_organization_infos",
+  "info": {
+    "name": "OrganizationInfo",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "copyRight": {
+      "type": "richtext"
+    },
+    "socials": {
+      "collection": "social"
+    }
+  }
+}

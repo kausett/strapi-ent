@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navigations",
+  "info": {
+    "name": "navigation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "left": {
+      "type": "dynamiczone",
+      "components": [
+        "element.dropdown",
+        "element.drop-down-with-sections",
+        "links.button",
+        "links.link"
+      ]
+    },
+    "right": {
+      "type": "dynamiczone",
+      "components": [
+        "links.button",
+        "links.link",
+        "element.dropdown",
+        "element.drop-down-with-sections"
+      ]
+    },
+    "logo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.logo"
+    },
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

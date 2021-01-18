@@ -1,0 +1,68 @@
+{
+  "collectionName": "components_sections_feature_heros",
+  "info": {
+    "name": "FeatureHeros",
+    "icon": "money-check"
+  },
+  "options": {},
+  "attributes": {
+    "shortTitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "actionText": {
+      "type": "string"
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "Light",
+        "Dark"
+      ]
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Main",
+        "Pages"
+      ]
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "image_mobile": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.button"
+    },
+    "textField": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.text-field"
+    }
+  }
+}

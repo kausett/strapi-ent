@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_links_buttons",
+  "info": {
+    "name": "Button",
+    "icon": "hand-point-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "Primary",
+        "Secondary"
+      ]
+    },
+    "disabled": {
+      "type": "boolean"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Action",
+        "Icon"
+      ]
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.link"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

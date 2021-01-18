@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_feature_list_rows",
+  "info": {
+    "name": "FeatureListRow",
+    "icon": "barcode"
+  },
+  "options": {},
+  "attributes": {
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.header"
+    },
+    "features": {
+      "collection": "feature"
+    }
+  }
+}

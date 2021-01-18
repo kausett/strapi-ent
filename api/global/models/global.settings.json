@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "globals",
+  "info": {
+    "name": "Global",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "metadata": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.metadata"
+    },
+    "metaTitleSuffix": {
+      "type": "string"
+    },
+    "favicon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "notificationBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "element.notification-banner"
+    },
+    "navigation": {
+      "model": "navigation"
+    },
+    "footer": {
+      "model": "footer"
+    }
+  }
+}

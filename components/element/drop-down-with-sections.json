@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_element_drop_down_with_sections",
+  "info": {
+    "name": "DropDownWithSections",
+    "icon": "level-down-alt"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "element.dropdown"
+    }
+  }
+}
